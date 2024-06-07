@@ -203,43 +203,6 @@ const updateBook = async (req, res) => {
 };
 
 //TCL add Purchase
-// const addPurchase = async (req, res) => {
-//     const {  timestamp, emp_id, stock_id, custNumber, quantity } = req.body;
-//     const client = await pool.connect(); // get a client from the pool
-
-//     try {
-//         await client.query('BEGIN'); // start a transaction
-
-//         // Insert into Purchase table
-//         const purchaseResult = await client.query(queries.addPurchase, 
-//             [
-//                 timestamp, 
-//                 emp_id, 
-//                 stock_id, 
-//                 custNumber, 
-//                 quantity
-//             ]) 
-
-//         let purchase_id = purchaseResult.rows[0].purchase_id; // Assuming the purchase_id column exists in the result
-
-//         // update total price in Purchase table
-//         await client.query(queries.updateTotalPrice, [purchase_id])
-
-//         // Update Stock table
-//         await client.query(queries.updateStock, [quantity, purchase_id])
-
-//         await client.query('COMMIT'); // commit the transaction if all queries were successful
-//         return res.status(201).send(`Purchase added and stock updated successfully.`);
-
-//     } catch (error) {
-//         await client.query('ROLLBACK'); // rollback the transaction in case of an error
-//         console.error('Error adding purchase and updating stock:', error);
-//        // return res.status(500).send('Internal Server Error');
-//     } finally {
-//         client.release(); // release the client back to the pool
-//     }
-// };
-
 const addPurchase = async (req, res) => {
     const {  timestamp, emp_id, stock_id, custNumber, quantity, store_id } = req.body;
     const client = await pool.connect(); // get a client from the pool
