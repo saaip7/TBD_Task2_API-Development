@@ -89,7 +89,7 @@ const addBookToWishlist = (req, res) => {
 
 const removeWishlist = (req, res) => {
     const accountID = parseInt(req.params.accountID)
-    const bookNumber = parseInt(req.params.bookNumber)
+    const bookNumber     = parseInt(req.params.bookNumber)
    
     pool.query(queries.checkAccountExistInWishlist, [accountID], (error, results) => {
         if (results.rows.length) {
