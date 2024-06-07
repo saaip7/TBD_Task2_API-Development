@@ -105,3 +105,10 @@ Alternatively, you can use the default Node.js command:
 ```
 node server.js
 ```
+
+## Video Demo
+
+[![Watch the video](https://img.youtube.com/vi/guEVdMBYPjA/0.jpg)](https://youtu.be/guEVdMBYPjA)
+
+Click the image above to watch the demo on YouTube.
+
