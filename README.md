@@ -90,3 +90,18 @@ The UPDATE Method also requires JSON input. Below is an example of a JSON input 
 ```
 > [!NOTE]
 > If you want to update only some attributes, remove the unwanted parameters.
+
+
+## Run It Down
+> [!WARNING]
+> After cloning or pulling the repository, always run _npm i_ to install the necessary packages. There might also be other specific packages that need to be installed, such as _nodemon, pg, or dotenv_.
+
+Command to start the server
+```
+npm run devStart
+```
+The above command is a script created to simplify terminal commands.
+Alternatively, you can use the default Node.js command:
+```
+node server.js
+```
