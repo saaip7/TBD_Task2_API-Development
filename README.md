@@ -32,7 +32,7 @@ The test is performed using POSTMAN. The POST Method requires input in the form 
         "price": 20.00
     },
     "stockDetails": {
-        "Store_store_id": 10,
+        "Store_store_id": 61,
         "quantity": 5
     }
 }
