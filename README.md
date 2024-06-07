@@ -18,7 +18,7 @@ This source code is created to fulfill the final project requirements for TBD, f
 > Manages the configuration and connection to the database. Important information such as the database password is stored in a separate _environment file (.env)._
 
 ## Example POST Method Query Input
-Testing is conducted using POSTMAN. The POST Method requires input in the form of JSON in the POSTMAN body. Below are some examples.
+The test is performed using POSTMAN. The POST Method requires input in the form of JSON in the POSTMAN body. Below are some examples.
 
 ### 1. addBook
 ```json
